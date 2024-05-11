@@ -22,3 +22,4 @@ export class Ejercicio3Component {
     }
   }
 }
+//pregunta 3
