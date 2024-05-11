@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+      Formulario Calculo
+    </div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingrese Número</label>
+            <input type="number" class="form-control" 
+            [(ngModel)]="elem.numero1"
+            id="txtnumber1" placeholder="Ingrese Numero">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingrese Número</label>
+            <input type="email" class="form-control" 
+            [(ngModel)]="elem.numero2"
+            id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <hr/>
+          <button type="button" (click)="calcularElem()"
+          class="btn btn-primary">Calulcar</button>
+          @if (mostrarResultado) {
+            <div class="alert alert-primary" role="alert">
+            {{elem.resultado}}
+          </div>}
+          
+ </div>
+  </div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Mes Correspondiente</h1>
+  
+    <div class="form-group">
+      <label for="numeroMes">Ingrese un número del 1 al 12:</label>
+      <input type="number" class="form-control" id="numeroMes" [(ngModel)]="numeroMes" min="1" max="12">
+    </div>
+  
+    <button type="button" class="btn btn-primary" (click)="mostrarMes()">Mostrar Mes</button>
+  
+    <div class="resultado" *ngIf="nombreMes">El mes correspondiente al número ingresado es: {{ nombreMes }}</div>
+  </div>

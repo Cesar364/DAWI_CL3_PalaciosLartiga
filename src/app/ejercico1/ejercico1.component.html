@@ -1,0 +1,98 @@
+<div class="card">
+    <div class="card-header">
+    Formulario  Camion <hr/>
+      <div class="card-body">
+          <div class="mb-3">
+              <label for="txtindicador" class="form-label">Ingrese Indicador</label>
+              <input type="text" class="form-control" 
+              [(ngModel)]="alc1.indicador1"
+              id="txtindicador" placeholder="Ingrese Indicador">
+            </div>
+            <div class="mb-3">
+              <label for="txttasa" class="form-label">Ingrese Tasa</label>
+              <input type="text" class="form-control" 
+              [(ngModel)]="alc1.tasa1"
+              id="txttasa" placeholder="Ingrese Tasa">
+            </div>
+            <hr/>
+            <button type="button" (click)="calcularAlc1()"
+            class="btn btn-primary">Calulcar</button>
+            @if (mostrarResultado) {
+              <div class="alert alert-primary" role="alert">
+            Su vehiculo es:  {{alc1.vehiculo1}}, usted se encuentra {{alc1.diagnostico1}}
+            </div>
+        } 
+    </div>  
+</div>
+      <br>
+
+<div class="card-header">
+    Formulario  Autobus <hr/>
+      <div class="card-body">
+          <div class="mb-3">
+              <label for="txtindicador" class="form-label">Ingrese Indicador</label>
+              <input type="text" class="form-control" 
+              [(ngModel)]="alc2.indicador2"
+              id="txtindicador" placeholder="Ingrese Indicador">
+            </div>
+            <div class="mb-3">
+              <label for="txttasa" class="form-label">Ingrese Tasa</label>
+              <input type="text" class="form-control" 
+              [(ngModel)]="alc2.tasa2"
+              id="txttasa" placeholder="Ingrese Tasa">
+            </div>
+            <hr/>
+            <button type="button" (click)="calcularAlc2()"
+            class="btn btn-primary">Calulcar</button>
+            @if (mostrarResultado) {
+              <div class="alert alert-primary" role="alert">
+            Su vehiculo es:  {{alc2.vehiculo2}}, usted se encuentra {{alc2.diagnostico2}}
+            </div>} </div>  </div>
+            <br>
+<div class="card-header">
+        Formulario  Turismo <hr/>
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <label for="txtindicador" class="form-label">Ingrese Indicador</label>
+                          <input type="text" class="form-control" 
+                          [(ngModel)]="alc3.indicador3"
+                          id="txtindicador" placeholder="Ingrese Indicador">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txttasa" class="form-label">Ingrese Tasa</label>
+                          <input type="text" class="form-control" 
+                          [(ngModel)]="alc3.tasa3"
+                          id="txttasa" placeholder="Ingrese Tasa">
+                        </div>
+                        <hr/>
+                        <button type="button" (click)="calcularAlc3()"
+                        class="btn btn-primary">Calulcar</button>
+                        @if (mostrarResultado) {
+                          <div class="alert alert-primary" role="alert">
+                        Su vehiculo es:  {{alc3.vehiculo3}}, usted se encuentra {{alc3.diagnostico3}}
+                        </div>} </div>  </div>
+                        <br>
+<div class="card-header">
+         Formulario  Motocicleta <hr/>
+                              <div class="card-body">
+                                  <div class="mb-3">
+                                      <label for="txtindicador" class="form-label">Ingrese Indicador</label>
+                                      <input type="text" class="form-control" 
+                                      [(ngModel)]="alc4.indicador4"
+                                      id="txtindicador" placeholder="Ingrese Indicador">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="txttasa" class="form-label">Ingrese Tasa</label>
+                                      <input type="text" class="form-control" 
+                                      [(ngModel)]="alc4.tasa4"
+                                      id="txttasa" placeholder="Ingrese Tasa">
+                                    </div>
+                                    <hr/>
+                                    <button type="button" (click)="calcularAlc4()"
+                                    class="btn btn-primary">Calulcar</button>
+                                    @if (mostrarResultado) {
+                                      <div class="alert alert-primary" role="alert">
+                                    Su vehiculo es:  {{alc4.vehiculo4}}, usted se encuentra {{alc4.diagnostico4}}
+                                    </div>} </div>  </div>
+
+</div>
