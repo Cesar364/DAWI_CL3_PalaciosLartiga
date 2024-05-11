@@ -1,1 +1,9 @@
-<p>ejercicio4 works!</p>
+<div class="container">
+    <h1>Suma de Dígitos (23-99)</h1>
+  
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let numero of numeros; let i = index">
+        <span>Número: {{ numero }} - Suma de Dígitos: {{ sumaDigitos[i] }}</span>
+      </li>
+    </ul>
+  </div>
